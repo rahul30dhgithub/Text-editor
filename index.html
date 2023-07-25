@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" href="logoportal.png" type="image/x-icon">
+     <title>R_Text Editor</title> 
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">          
+</head>
+<body>
+    <div class="section">
+        <div class="row">
+            <div class="column">
+                <div class="first box">
+                    <input type="number"id="font-size"
+                    min="1"
+                    max="100"
+                    value="16"
+                    onchange="f1(this)">
+                </div>
+                <div class="second box">
+                    <button type="button" onclick="f2
+                    (this)">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+                    <button type="button" onclick="f3
+                    (this)">
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+                    <button type="button" onclick="f4
+                    (this)">
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                </div>
+                <div class="third box">
+                    <button type="button" onclick="f5(this)">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+                    <button type="button" onclick="f6(this)">
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                    <button type="button" onclick="f7(this)">
+                        <i class="fa-solid fa-align-right"></i>
+                    </button>
+                </div>
+                <div class="fourth box">
+                    <button type="button"onclick="f8(this)">
+                        aA
+                    </button>
+                    <button type="button"onclick="f9(this)">
+                        <i class="fa-solid fa-text-slash"></i>
+                    </button>
+                    <input type="color" onchange="f10(this)">
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <textarea id="textarea" placeholder="Your text is here" >
+                </textarea>   
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
